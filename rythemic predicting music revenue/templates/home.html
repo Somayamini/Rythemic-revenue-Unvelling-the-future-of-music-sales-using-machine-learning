@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RhythmicRevenue</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css')}}">
+</head>
+<body>
+<div class="top-bar">
+    <a href="mailto:dudekulasameer41@gmail.com">dudekulasameer41@gmail.com</a> |
+    <a href="tel:+917995325290">+91 79953 25290</a>
+    <div class="social-icons">
+        <a href="#">&#x1F426;</a> <!-- Twitter icon placeholder -->
+        <a href="#">&#x1F4F7;</a> <!-- Instagram icon placeholder -->
+        <a href="#">&#x1F4E3;</a> <!-- LinkedIn icon placeholder -->
+    </div>
+</div>
+
+<div class="navbar">
+    <div class="logo">
+        <a href="#">Music</a>
+    </div>
+    <div class="right index">
+        <a href="#">home</a>
+        <a href="{{ url_for('about')}}" onclick="showSection('about')">about</a>
+        <a href="{{ url_for('contact')}}" onclick="showSection('contact')">Contact</a>
+    </div>
+</div>
+<div id="home" class="hero">
+    <h1>RhythmicRevenue: Unveiling the Future of Music Sales</h1>
+    <a href="{{ url_for('inner_page')}}"> <button>Get started</button> </a>
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - RhythmicRevenue</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css')}}">
+</head>
+<body>
+<div class="navbar">
+    <div class="logo">
+        <a href="/">Music</a>
+    </div>
+    <div class="menu">
+        <a href="{{ url_for('home')}}">Home</a></li>
+        <a href="{{ url_for('about')}}">About</a></li>
+        <a href="/contact">Contact</a>
+    </div>
+</div>
+<div class="container">
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <div>
+                <h3>Our Address</h3>
+                <p>Gachibowli, Hyderabad, Telangana</p>
+            </div>
+            <div>
+                <h3>Email Us</h3>
+                <p>dudekulasameer41@gmail.com</p>
+            </div>
+            <div>
+                <h3>Call Us</h3>
+                <p>+91 79953 25290</p>
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.9809759055525!2d-74.00658208459427!3d40.709150945221295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a19ffcc3ed1%3A0x1bfac677ac67a15b!2s157%20William%20St%2C%20New%20York%2C%20NY%2010038%2C%20USA!5e0!3m2!1sen!2sin!4v1687372998430!5m2!1sen!2sin" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <input type="text" placeholder="Subject">
+            <textarea placeholder="Message" rows="5"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Sales</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style2.css')}}">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="{{ url_for('static', filename='images/final.png')}}" alt="Music Images">
+        </div>
+        <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="{{ url_for('about')}}">About</a>
+            <a href="{{ url_for('contact')}}">Contact</a>
+        </div>
+    </div>
+    <div class="hero">
+        <h1>The Value of the Music Sales</h1>
+        <p>{{ result }}</p>
+    </div>
+</body>
+</html>

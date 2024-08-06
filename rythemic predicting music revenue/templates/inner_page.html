@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RhythmicRevenue</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style1.css')}}">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">
+        <a href="{{ url_for('static', filename='images/music.jpg')}}" alt="Music Images">
+    </div>
+    <div class="menu">
+        <a href="{{ url_for('home')}}">Home</a>
+        <a href="{{ url_for('about')}}">About</a>
+        <a href="{{ url_for('contact')}}">Contact</a>
+    </div>
+</div>
+
+<div class="hero">
+    <div class="form-container">
+        <h2>Enter your Details</h2>
+        <form method="POST" action="{{ url_for('submit') }}">
+            <input type="number" name="format" placeholder="Format">
+            <input type="number" name="year" placeholder="Year" >
+            <input type="number" name="metric" placeholder="Metric">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

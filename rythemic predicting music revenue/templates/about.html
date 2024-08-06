@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - RhythmicRevenue</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css')}}">
+</head>
+<body>
+<div class="navbar">
+    <div class="logo">
+        <a href="/">Music</a>
+    </div>
+    <div class="menu">
+        <a href="{{ url_for('home')}}">Home</a></li>
+        <a href="/about">About</a>
+        <a href="{{ url_for('contact')}}">Contact</a>
+    </div>
+</div>
+<div class="container">
+    <section id="about" class="content-section">
+        <h2>The project involves</h2>
+        <p>These three sections—Data Preparation and Preprocessing, Model Building and Evaluation, and Deployment and Monitoring—form the core structure of a Regression project. Each phase plays a vital role in the overall success of the project, from preparing clean and meaningful data to deploying and maintaining a robust and reliable regression model.</p>
+        <h3 class="section-title">Data Preparation and Preprocessing</h3>
+        <p>In the initial phase of a Regression project, the focus is on data collection, cleaning, and preprocessing. This involves gathering relevant data, handling missing values, encoding categorical variables, and scaling features. The goal is to ensure that the dataset is in a suitable format for training a regression model. This phase is critical for building a strong foundation for the project.</p>
+        <h3 class="section-title">Model Building and Evaluation</h3>
+        <p>The heart of the project lies in the model building and evaluation phase. Here, you choose an appropriate Regression algorithm, train the model on the prepared data. Evaluation is essential to assess the model's performance, which includes r2_score.</p>
+        <h3 class="section-title">Deployment and Monitoring</h3>
+        <p>After a successful model is built and evaluated, it's time to deploy it in a real-world context. This often involves integrating the model into an application or system where it can make predictions on new, unseen data. Continuous monitoring is crucial to ensure the model's performance remains satisfactory over time. Monitoring allows for timely updates and retraining to adapt to evolving data patterns.</p>
+    </section>
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
